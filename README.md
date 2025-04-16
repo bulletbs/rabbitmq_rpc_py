@@ -12,16 +12,16 @@
 
 ## Installation
 
-Install `myrpc` using `uv` or `pip`:
+Install `rabbitmq_rpc_py` using `uv` or `pip`:
 
 ```bash
-uv add myrpc
+uv add rabbitmq_rpc_py
 ```
 
 Or with `pip`:
 
 ```bash
-pip install myrpc
+pip install rabbitmq_rpc_py
 ```
 
 ## Requirements
