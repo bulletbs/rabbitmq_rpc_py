@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="rabbitmq_rpc_py",
-    version="0.1.0",
+    version="0.1.1",
     description="Asynchronous RPC library using RabbitMQ and aio-pika",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",

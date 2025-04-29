@@ -83,7 +83,8 @@ class RPCServer(RPCBase):
                 correlation_id=message.correlation_id,
                 delivery_mode=DeliveryMode.PERSISTENT
             )
-            await self.channel.default_exchange.publish(
-                response_message,
-                routing_key=message.reply_to
-            )
+            if message.reply_to is not None:
+                await self.channel.default_exchange.publish(
+                    response_message,
+                    routing_key=message.reply_to
+                )
